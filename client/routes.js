@@ -18,11 +18,11 @@ angular.module("noterace2").config(['$urlRouterProvider', '$stateProvider', '$lo
         url:'/race',
         templateUrl:'client/lists/views/noterace.ng.html',
         controller:'NotesCtrl',
-        resolve:{
-          "currentUser": ["$meteor", function ($meteor) {
-            return $meteor.requireUser();
-          }]
-        }
+        // resolve:{
+        //   "currentUser": ["$meteor", function ($meteor) {
+        //     return $meteor.requireUser();
+        //   }]
+        // }
       });
 
 
