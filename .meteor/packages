@@ -8,4 +8,5 @@ meteor-platform
 urigo:angular
 angularui:angular-ui-router
 accounts-ui
-accounts-google
+accounts-password
+#accounts-google
