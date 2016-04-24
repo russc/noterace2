@@ -1,10 +1,12 @@
 <label>Watch Mode?
   <input type="checkbox" ng-model="watchMode">
 </label>
-<div class="row">
-  <div class="col-md-6" ng-hide="watchMode">
+
+<div class="container">
+  <!-- <button type="submit" class="btn" ng-click="joinRace()" ng-hide="racing">Join Race</button> -->
+  <div class="col-md-8" ng-hide="watchMode">
+    <h3>Racer Name: {{racerName}}</h3>
     <div class="row">
-      <button type="" class="btn btn-default" ng-click="notation()">New Note</button>
       <div class="form-group">
         <div class="radio">
           <label>
@@ -28,17 +30,18 @@
       <h3>{{graded}}</h3>
       <div class="" id="notation">
       </div>
+
     </div>
 
     <div class="row">
       <div class="btn-group" role="group" aria-label="...">
-        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('A')">A</button>
-        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('B')">B</button>
-        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('C')">C</button>
-        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('D')">D</button>
-        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('E')">E</button>
-        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('F')">F</button>
-        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('G')">G</button>
+        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('A')">A &nbsp;</button>
+        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('B')">B &nbsp;</button>
+        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('C')">C &nbsp;</button>
+        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('D')">D &nbsp;</button>
+        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('E')">E &nbsp;</button>
+        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('F')">F &nbsp;</button>
+        <button type="button" class="btn btn-info btn-lg " ng-click="checkAnswer('G')">G &nbsp;</button>
       </div>
     </div>
     <div class="row">
@@ -62,22 +65,26 @@
         <button type="button" class="btn btn-warning btn-lg " ng-click="checkAnswer('_F')">Fb</button>
         <button type="button" class="btn btn-warning btn-lg " ng-click="checkAnswer('_G')">Gb</button>
       </div>
+      <!-- <button type="" class="btn btn-default" ng-click="notation()">New Note</button> -->
+
     </div>
 
   </div>
-  <div class="col-md-6">
-    <div ng-show="!racing" ng-hide="watchMode">
+  <div ng-class="watchMode === true ? 'col-md-12' : 'col-md-4'">
+    <!-- <div ng-show="!racing" ng-hide="watchMode">
       <h2>Ready to Race?</h2>
       <div class="form-group">
         <input type="text" name="name" ng-model="racerName" placeholder="What will you racer name be?">
         <button type="submit" class="btn" ng-click="joinRace()">Join</button>
       </div>
-    </div>
+    </div> -->
 
     <div>
+      <h4>Current Race Top 10</h4>
+
       <ol>
-        <li ng-repeat="person in raceResults | orderBy:'-score'">
-          <h3>{{person.name}}</h3>
+        <li class="rank" ng-repeat="person in raceResults | orderBy:'-score'| limitTo:10">
+          <p>{{person.name}}</p>
 
           <div class="progress">
             <div class="progress-bar progress-bar-success .animate progress-bar-striped" role="progressbar" aria-valuenow="{{person.score}}" aria-valuemin="0" aria-valuemax="100" style="width:{{person.score+'%'}}">

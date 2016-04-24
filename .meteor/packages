@@ -9,4 +9,4 @@ urigo:angular
 angularui:angular-ui-router
 accounts-ui
 accounts-password
-accounts-google
+#accounts-google

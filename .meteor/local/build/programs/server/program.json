@@ -242,56 +242,6 @@
       "path": "packages/accounts-password.js"
     },
     {
-      "sourceMap": "packages/service-configuration.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/service-configuration.js"
-    },
-    {
-      "sourceMap": "packages/localstorage.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/localstorage.js"
-    },
-    {
-      "sourceMap": "packages/url.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/url.js"
-    },
-    {
-      "sourceMap": "packages/oauth.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/oauth.js",
-      "assets": {
-        "end_of_popup_response.html": "assets/packages/oauth/end_of_popup_response.html",
-        "end_of_redirect_response.html": "assets/packages/oauth/end_of_redirect_response.html"
-      }
-    },
-    {
-      "sourceMap": "packages/accounts-oauth.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/accounts-oauth.js"
-    },
-    {
-      "sourceMap": "packages/oauth2.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/oauth2.js"
-    },
-    {
-      "node_modules": "npm/http/node_modules",
-      "sourceMap": "packages/http.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/http.js"
-    },
-    {
-      "sourceMap": "packages/google.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/google.js"
-    },
-    {
-      "sourceMap": "packages/accounts-google.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/accounts-google.js"
-    },
-    {
       "sourceMap": "packages/session.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/session.js"
@@ -303,6 +253,11 @@
     },
     {
       "path": "packages/global-imports.js"
+    },
+    {
+      "sourceMap": "packages/service-configuration.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/service-configuration.js"
     }
   ]
 }
