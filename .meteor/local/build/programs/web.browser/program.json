@@ -442,6 +442,48 @@
       "hash": "22d7668f8f57baf74a59fad0ff324ca5004edcbb"
     },
     {
+      "path": "packages/npm-bcrypt/packages/npm-bcrypt.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/npm-bcrypt/packages/npm-bcrypt.js?a74a596f47b2ca31c2b103e6e0877c6808616b5c",
+      "size": 168,
+      "hash": "a74a596f47b2ca31c2b103e6e0877c6808616b5c"
+    },
+    {
+      "path": "packages/sha.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/sha.js?65ef52f7221944768bfc2049d6b7e163c8ae2615",
+      "sourceMap": "packages/sha.js.map",
+      "sourceMapUrl": "/packages/65ef52f7221944768bfc2049d6b7e163c8ae2615.map",
+      "size": 19584,
+      "hash": "65ef52f7221944768bfc2049d6b7e163c8ae2615"
+    },
+    {
+      "path": "packages/srp.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/srp.js?e2e28156e8c912d504a3586351c8a1119f664cfd",
+      "sourceMap": "packages/srp.js.map",
+      "sourceMapUrl": "/packages/e2e28156e8c912d504a3586351c8a1119f664cfd.map",
+      "size": 173470,
+      "hash": "e2e28156e8c912d504a3586351c8a1119f664cfd"
+    },
+    {
+      "path": "packages/accounts-password.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/accounts-password.js?3845cc71ad2dc1378b7d8cc4164a78359506dd40",
+      "sourceMap": "packages/accounts-password.js.map",
+      "sourceMapUrl": "/packages/3845cc71ad2dc1378b7d8cc4164a78359506dd40.map",
+      "size": 33170,
+      "hash": "3845cc71ad2dc1378b7d8cc4164a78359506dd40"
+    },
+    {
       "path": "packages/accounts-ui-unstyled.js",
       "where": "client",
       "type": "js",
@@ -603,9 +645,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/lists/controllers/noterace.js?ae9e056b56eeae85aab34dec4f9612803bee5af5",
-      "size": 2340,
-      "hash": "ae9e056b56eeae85aab34dec4f9612803bee5af5"
+      "url": "/client/lists/controllers/noterace.js?038980530f3f24ce4fddd9e448eb5b990f92a9cf",
+      "size": 2346,
+      "hash": "038980530f3f24ce4fddd9e448eb5b990f92a9cf"
     },
     {
       "path": "app/client/lists/date-directive.js",
@@ -626,11 +668,11 @@
       "hash": "770728b0dbcf8812ecf54fc77b877b2c88cd5719"
     },
     {
-      "path": "app/client/abc.js",
+      "path": "app/client/abc.min.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/abc.js?a717fc8bc9bf205a2eaae11c08e2d86dcf47e0ff",
+      "url": "/client/abc.min.js?a717fc8bc9bf205a2eaae11c08e2d86dcf47e0ff",
       "size": 406014,
       "hash": "a717fc8bc9bf205a2eaae11c08e2d86dcf47e0ff"
     },
@@ -667,7 +709,7 @@
       "path": "head.html",
       "where": "internal",
       "type": "head",
-      "hash": "8fb533d0d32fc1b36cebd458a47b6e4e7d012ba2"
+      "hash": "4b96abd2d3943f332ab367208a71f356223c1ed3"
     }
   ]
 }

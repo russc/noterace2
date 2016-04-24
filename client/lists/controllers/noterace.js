@@ -8,7 +8,7 @@ angular.module("noterace2").controller("NotesCtrl", ['$scope', '$rootScope', '$m
     $scope.options = {
       clef: "treble"
     };
-    $scope.user = Meteor.user().emails[0].address;
+    // $scope.user = Meteor.user().emails[0].address;
     $scope.racing = false;
     $scope.watchMode = false;
 
@@ -57,7 +57,7 @@ angular.module("noterace2").controller("NotesCtrl", ['$scope', '$rootScope', '$m
       ref.child($scope.racerName).set({
         name: $scope.racerName,
         score: $scope.score,
-        email:$scope.user
+        // email:$scope.user
       });
       $scope.racing = true;
       $firebaseArray(ref);
